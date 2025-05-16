@@ -187,17 +187,17 @@ namespace WebAPI
                                 break;
                             case "notready":
                                 {
-                                    string callerid = profiles.setstatus(queryStringArray[2], "custom1");
-                                    string status = "";
-                                    if (callerid == "Custom 1")
-                                        {
-                                            status = queuecontroll.status("logout_all",queryStringArray[2]);
-                                        }
-                                    else
-                                        {
-                                            status = "false";
-                                        }
-                                respval = status;
+                                    // string callerid = profiles.setstatus(queryStringArray[2], "away");
+                                    // string status = "";
+                                    // if (callerid == "Away")
+                                    //     {
+                                    status = queuecontroll.status("logout_all",queryStringArray[2]);
+                                    //     }
+                                    // else
+                                    //     {
+                                    //         status = "false";
+                                    //     }
+                                    respval = status;
                                 }
                                 break;
                             case "logout":
